@@ -18,7 +18,12 @@
     "compile:example:one": "node ./dist/base/controller.js compile --rootDir ./examples/compiled/after",
     "compile:example:two": "node ./dist/base/controller.js compile --rootDir ./examples/compiled/after --typescript"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "nextjs",
+    "next-translate",
+    "localekeys"
+  ],
   "author": "Sascha Happ",
   "license": "ISC",
   "dependencies": {
@@ -35,6 +40,13 @@
     "typescript": "^4.7.2"
   },
   "bin": {
-    "next-translate-localekeys": "./dist/base/controller.js"
+    "next-translate-localekeys": "dist/base/controller.js"
+  },
+  "bugs": {
+    "url": "https://github.com/shd-tools/next-translate-localekeys/issues"
+  },
+  "homepage": "https://github.com/shd-tools/next-translate-localekeys#readme",
+  "directories": {
+    "example": "examples"
   }
 }
