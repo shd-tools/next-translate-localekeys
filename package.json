@@ -1,0 +1,40 @@
+{
+  "name": "next-translate-localekeys",
+  "version": "0.0.0",
+  "description": "generates typesafe locale keys for next-translate package with auto completion and vsc comments support",
+  "main": "./dist/base/controller.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shd-tools/next-translate-localekeys.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc -p ./tsconfig.json",
+    "generate:example:one": "node ./dist/base/controller.js generate --rootDir ./examples/locales --outDir ./examples/generated",
+    "generate:example:two": "node ./dist/base/controller.js generate --rootDir ./examples/locales --outDir ./examples/generated --translations",
+    "generate:example:three": "node ./dist/base/controller.js generate --rootDir ./examples/locales --outDir ./examples/generated --typescript",
+    "generate:example:four": "node ./dist/base/controller.js generate --rootDir ./examples/locales --outDir ./examples/generated --typescript --translations",
+    "generate:example:five": "node ./dist/base/controller.js generate --rootDir ./examples/locales --lang es --outDir ./examples/generated --typescript --translations",
+    "compile:example:one": "node ./dist/base/controller.js compile --rootDir ./examples/compiled/after",
+    "compile:example:two": "node ./dist/base/controller.js compile --rootDir ./examples/compiled/after --typescript"
+  },
+  "keywords": [],
+  "author": "Sascha Happ",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.3.0",
+    "node": "^17.7.2"
+  },
+  "peerDependencies": {
+    "next-translate": ">= 1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "next-translate": "^1.4.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.2"
+  },
+  "bin": {
+    "next-translate-localekeys": "./dist/base/controller.js"
+  }
+}
