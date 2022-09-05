@@ -1,6 +1,6 @@
 {
   "name": "next-translate-localekeys",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "generates typesafe locale keys for next-translate package with auto completion and vsc comments support",
   "main": "./dist/base/controller.js",
   "repository": {
